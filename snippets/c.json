@@ -1,0 +1,37 @@
+{
+  "Main Function": {
+    "prefix": "main",
+    "body": [
+      "#include <stdio.h>",
+      "",
+      "int main() {",
+      "    $0",
+      "    return 0;",
+      "}"
+    ]
+  },
+  "Printf": {
+    "prefix": "pf",
+    "body": ["printf(\"$1\\n\");$0"]
+  },
+  "Scanf": {
+    "prefix": "sf",
+    "body": ["scanf(\"%$1\", &$2);$0"]
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (int $1 = 0; $1 < $2; $1++) {",
+      "    $0",
+      "}"
+    ]
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if ($1) {",
+      "    $0",
+      "}"
+    ]
+  }
+}
